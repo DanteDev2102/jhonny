@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen > * {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+a.back {
+    display: block;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+a.back:hover {
+    background: #ddd;
+}
+
+
+#vaderOverlay {
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    max-width:100%;
+    height:auto;
+    max-height:100%;
+    z-index:0;
+}
+
+#introOverlay {
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    z-index: 1;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    opacity: 2;
+}
+
+#introOverlay.show {
+    opacity: 0;
+}
+
+.topleft {
+    position: fixed; 
+    top: 0px;
+    margin-left: 20px;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    color: #FFC500;
+    z-index: 1;
+}
+
+#score, #time {
+    font-family: "Franklin Gothic Condensed";
+}
+
+#cooldown {
+    position: fixed; 
+    margin-top: 20%;
+    margin-left: 47%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    color: #FFC500;
+    z-index: 1;
+    font-family: "Franklin Gothic Condensed";
+}
+
+#status {
+    position: fixed; 
+    margin-top: 15%;
+    margin-left: 17.5%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    color: #FFC500;
+    z-index: 1;
+    font-size: 300px;
+    font-family: "Franklin Gothic Condensed";
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Condensed';
+    src: url('Franklin Gothic Condensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
